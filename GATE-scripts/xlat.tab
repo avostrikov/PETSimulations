@@ -1,0 +1,130 @@
+;; Zubal phantom traslator 
+;; ID,    tissue-type,                 att class,       act class
+   0,     outside,                     Air,             Air
+   1,     skin,                        Water,           Skin
+   2,     cerebral fluid,              Water,           Background
+   3,     spinal chord,                Brain,           WhiteMatter
+   4,     skull,                       Skull,           Bone
+   5,     spine,                       SpineBone,       Bone
+   6,     rib cage and sternum,        RibBone,         Bone
+   7,     pelvis,                      RibBone,         Bone
+   8,     long bones,                  RibBone,         Bone
+   9,     skeletal muscle,             Muscle,          Muscle
+  10,     lungs,                       Lung,            Lung
+  11,     heart,                       Heart,           Heart
+  12,     liver,                       Liver,           Liver
+  13,     gall bladder,                Water,           Background
+  14,     kidney,                      Kidney,          Kidney
+  15,     pharynx,                     Water,           Background
+  16,     esophagus,                   Muscle,          Muscle
+  17,     stomach,                     Muscle,          Muscle
+  18,     small bowel,                 Intestine,       Muscle
+  19,     colon,                       Intestine,       Muscle
+  20,     pancreas,                    Pancreas,        Background
+  21,     adrenals,                    Water,           Background
+  22,     fat,                         Adipose,         Adipose
+  23,     blood pool,                  Blood,           Blood
+  24,     gas (bowel),                 Air,             Air
+  25,     fluid (bowel),               Water,           Background
+  26,     bone marrow,                 Water,           BoneMarrow
+  27,     lymph nodes,                 Lymph,           Background
+  28,     thyroid,                     Water,           Background
+  29,     trachea,                     Muscle,          Muscle
+  30,     cartilage,                   Cartilage,       Background
+  31,     spleen,                      Spleen,          Spleen
+  32,     urine,                       Water,           Urine
+  33,     feces,                       Water,           Zero
+  34,     testes,                      Testis,          Background
+  35,     prostate,                    Water,           Background
+  36,     undefined,                   undefined,       undefined
+  37,     rectum,                      Muscle,          Muscle
+  38,     undefined,                   undefined,       undefined
+  39,     diaphragm,                   Muscle,          Muscle
+  40,     bladder,                     Muscle,          Muscle
+  41,     undefined,                   undefined,       undefined
+  42,     undefined,                   undefined,       undefined
+  43,     undefined,                   undefined,       undefined
+  44,     undefined,                   undefined,       undefined
+  45,     undefined,                   undefined,       undefined
+  46,     undefined,                   undefined,       undefined
+  47,     undefined,                   undefined,       undefined
+  48,     undefined,                   undefined,       undefined
+  49,     undefined,                   undefined,       undefined
+  50,     undefined,                   undefined,       undefined
+  51,     undefined,                   undefined,       undefined
+  52,     undefined,                   undefined,       undefined
+  53,     undefined,                   undefined,       undefined
+  54,     undefined,                   undefined,       undefined
+  55,     undefined,                   undefined,       undefined
+  56,     undefined,                   undefined,       undefined
+  57,     undefined,                   undefined,       undefined
+  58,     undefined,                   undefined,       undefined
+  59,     undefined,                   undefined,       undefined
+  60,     undefined,                   undefined,       undefined
+  61,     undefined,                   undefined,       undefined
+  62,     undefined,                   undefined,       undefined
+  63,     lesion,                      Water,           Lesion
+  64,     undefined,                   undefined,       undefined
+  65,     undefined,                   undefined,       undefined
+  66,     undefined,                   undefined,       undefined
+  67,     undefined,                   undefined,       undefined
+  68,     undefined,                   undefined,       undefined
+  69,     undefined,                   undefined,       undefined
+  70,     dens of axis,                RibBone,         Bone
+  71,     jaw bone,                    RibBone,         Bone
+  72,     parotid gland,               Water,           Background
+  73,     undefined,                   undefined,       undefined
+  74,     lachrymal glands,            Water,           Background
+  75,     spinal canal,                Water,           Background
+  76,     hard palate,                 RibBone,         Bone
+  77,     cerebellum,                  Brain,           WhiteMatter
+  78,     tongue,                      Muscle,          Muscle
+  79,     undefined,                   undefined,       undefined
+  80,     undefined,                   undefined,       undefined
+  81,     horn of mandible,            RibBone,         Bone
+  82,     nasal septum,                RibBone,         Bone
+  83,     white matter,                Brain,           WhiteMatter
+  84,     superior sagittal sinus,     Water,           Background
+  85,     medulla oblongdata,          RibBone,         Bone
+  86,     undefined,                   undefined,       undefined
+  87,     undefined,                   undefined,       undefined
+  88,     artifical lesion,            Water,           Lesion
+  89,     frontal lobes,               Brain,           GreyMatter
+  90,     undefined,                   undefined,       undefined
+  91,     pons,                        Brain,           GreyMatter
+  92,     third ventricle,             Water,           Background
+  93,     undefined,                   undefined,       undefined
+  94,     pineal body,                 Brain,           GreyMatter
+  95,     occuptial lobes,             Brain,           GreyMatter
+  96,     hippocampus,                 Brain,           GreyMatter
+  97,     pituitary gland,             Brain,           GreyMatter
+  98,     fat (head),                  Adipose,         Adipose
+  99,     uncus (ear bones),           RibBone,         Bone
+ 100,     turbinates,                  RibBone,         Bone
+ 101,     caudate nucleus,             Brain,           GreyMatter
+ 102,     zygoma,                      RibBone,         Bone
+ 103,     insula cortex,               Brain,           GreyMatter
+ 104,     sinuses/mouth cavity,        Air,             Air
+ 105,     putamen,                     Brain,           GreyMatter
+ 106,     optic nerve,                 Brain,           WhiteMatter
+ 107,     internal capsule,            Brain,           WhiteMatter
+ 108,     spetum pellucidium,          Brain,           WhiteMatter
+ 109,     thalamus,                    Brain,           GreyMatter
+ 110,     eyeball,                     Water,           Background
+ 111,     corpus collosum,             Brain,           WhiteMatter
+ 112,     special region front lobes,  Brain,           GreyMatter
+ 113,     cerebral falx,               Brain,           WhiteMatter
+ 114,     temporal lobes,              Brain,           GreyMatter
+ 115,     fourth ventricle,            Water,           Background
+ 116,     frontal portion eyes,        Water,           Background
+ 117,     parietal lobes,              Brain,           GreyMatter
+ 118,     amygdala,                    Brain,           GreyMatter
+ 119,     eye,                         Water,           Background
+ 120,     globus pallidus,             Brain,           WhiteMatter
+ 121,     lens,                        Adipose,         Adipose
+ 122,     cerebral aqueduct,           Water,           Background
+ 123,     lateral ventricles,          Water,           Background
+ 124,     prefrontal lobes,            Brain,           WhiteMatter
+ 125,     teeth,                       RibBone,         Bone
+ 126,     undefined,                   undefined,       undefined
+ 127,     undefined,                   undefined,       undefined

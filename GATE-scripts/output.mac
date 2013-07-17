@@ -1,0 +1,13 @@
+# ASCII
+#/gate/output/ascii/enable
+#/gate/output/ascii/setOutFileHitsFlag 0
+#/gate/output/ascii/setOutFileSinglesFlag 0
+#/gate/output/ascii/setOutFileCoincidencesFlag 0
+
+# ROOT
+/gate/output/root/enable
+/gate/output/root/setFileName LAPPD-WB-{filenum}
+/gate/output/root/setRootHitFlag 0
+/gate/output/root/setRootSinglesFlag 0
+/gate/output/root/setRootCoincidencesFlag 1
+/gate/output/root/setRootNtupleFlag 0

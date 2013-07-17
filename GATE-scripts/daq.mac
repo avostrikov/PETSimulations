@@ -1,0 +1,5 @@
+# daq.mac
+/gate/application/setTimeSlice 60 s
+/gate/application/setTimeStart  {starttime} s
+/gate/application/setTimeStop  {stoptime} s
+/gate/application/startDAQ

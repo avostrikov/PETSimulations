@@ -1,0 +1,22 @@
+21
+0 Vacuum false 1.0 1.0 1.0 0.0
+1 Air false 1.0 1.0 1.0 0.0
+2 Lung true 0.0 1.0 0.0 0.2 
+5 Water true 1.0 1.0 1.0 0.5 
+6 Body true 1.0 1.0 1.0 0.5
+10 Heart true 1.0 0.0 0.0 1.0
+11 Liver true 1.0 1.0 0.0 1.0
+12 Kidney true 0.5 1.0 0.5 1.0
+13 Spleen true 1.0 1.0 1.0 0.6 
+14 Pancreas true 1.0 0.0 1.0 1.0
+15 Testis true 0.0 1.0 1.0 0.7
+16 Intestine true 1.0 1.0 1.0 0.6
+32 Muscle true 1.0 1.0 1.0 0.4
+33 Lymph true 0.0 0.0 1.0 1.0
+34 Blood true 1.0 0.0 0.0 0.1
+35 Adipose true 1.0 1.0 1.0 0.3
+64 Brain true 1.0 1.0 0.0 1.0
+100 RibBone true 0.4 0.8 0.4 1.0
+101 SpineBone true 0.4 0.8 0.8 1.0
+102 Skull true 0.4 0.8 0.4 1.0
+103 Cartilage true 0.4 0.8 0.4 0.7

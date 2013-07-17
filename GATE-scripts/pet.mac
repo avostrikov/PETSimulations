@@ -1,0 +1,30 @@
+# define material database
+/gate/geometry/setMaterialDatabase GateMaterials.db
+
+# visualization and reporting
+#/vis/disable
+/control/execute vis.mac
+/control/execute verbose.mac
+
+# camera, physics and phantom
+/control/execute camera_and_world.mac
+/control/execute voxelPhantom.mac
+/control/execute physics.mac
+
+# initialize
+/control/execute init.mac
+
+# show geometry
+#/geometry/test/recursive_test
+
+# digitizer
+/control/execute digit.mac
+
+# activity
+/control/execute voxelSource.mac
+
+# define output
+/control/execute output.mac
+
+# run
+/control/execute daq.mac

@@ -1,0 +1,19 @@
+18
+0       Zero
+1       Air
+2       Skin
+3       Background
+10      Lung
+11      Bone
+20      Liver
+21      Heart
+22      Kidney
+23      Spleen
+24      Muscle
+26      BoneMarrow
+64      WhiteMatter
+65      GreyMatter 
+100     Adipose
+101     Blood
+200     Urine
+210     Lesion

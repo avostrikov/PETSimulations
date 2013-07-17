@@ -1,0 +1,19 @@
+  !INTERFILE :=
+  !GENERAL DATA :=
+  !data offset in bytes := 0
+  !name of data file := act_map.dat
+  ;
+  !GENERAL IMAGE DATA :=
+  !total number of images := 487
+  imagedata byte order := LITTLEENDIAN
+  ;
+  !number of images/energy window := 487
+  !matrix size [1] := 156
+  !matrix size [2] := 72
+  !number format := unsigned integer
+  !number of bytes per pixel := 2
+  scaling factor (mm/pixel) [1] := 4.0
+  scaling factor (mm/pixel) [2] := 4.0
+  !number of slices := 487
+  slice thickness (pixels) := 4.0
+  !END OF INTERFILE :=

@@ -1,0 +1,13 @@
+/vis/open                           OGLIX
+/vis/open                           OGLSX
+/vis/viewer/set/viewpointThetaPhi   60 60
+#/vis/viewer/set/viewpointThetaPhi   90 0
+/vis/drawVolume
+/vis/scene/add/axes                 0  0  0  100 cm
+/vis/viewer/zoom                    1.0
+/vis/viewer/set/style               wireframe
+/tracking/storeTrajectory           0
+/vis/scene/add/trajectories         rich
+/vis/scene/add/hits
+/vis/scene/endOfEventAction         accumulate
+/vis/scene/endOfRunAction           accumulate

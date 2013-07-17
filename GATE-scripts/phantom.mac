@@ -1,0 +1,13 @@
+# P H A N T O M
+/gate/world/daughters/name       phantom
+/gate/world/daughters/insert     cylinder
+/gate/phantom/geometry/setRmax    10. cm
+/gate/phantom/geometry/setRmin     0. cm
+/gate/phantom/geometry/setHeight 100. cm
+/gate/phantom/setMaterial        Water 
+/gate/phantom/vis/setColor       white
+#/gate/phantom/vis/setVisible     false
+/gate/phantom/vis/setVisible     true
+
+# A T T A C H P H A N T O M S D
+/gate/phantom/attachPhantomSD

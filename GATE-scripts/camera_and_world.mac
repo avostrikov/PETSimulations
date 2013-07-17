@@ -1,0 +1,88 @@
+# define the world
+/gate/world/geometry/setXLength          200.0 cm
+/gate/world/geometry/setYLength          200.0 cm
+/gate/world/geometry/setZLength          600.0 cm
+/gate/world/setMaterial                  Air
+/gate/world/vis/setVisible               false
+
+# define the scanenr as a hollowed-out box that equals to the FOV
+/gate/world/daughters/name                PETscanner
+/gate/world/daughters/insert              trpd
+/gate/PETscanner/placement/setTranslation 0.0 0.0 0.0 cm
+/gate/PETscanner/geometry/setX1Length    100.0 cm
+/gate/PETscanner/geometry/setY1Length    100.0 cm
+/gate/PETscanner/geometry/setX2Length    100.0 cm
+/gate/PETscanner/geometry/setY2Length    100.0 cm
+/gate/PETscanner/geometry/setZLength     400.0 cm
+/gate/PETscanner/geometry/setXBoxLength   90.0 cm
+/gate/PETscanner/geometry/setYBoxLength   36.0 cm
+/gate/PETscanner/geometry/setZBoxLength  300.0 cm
+/gate/PETscanner/geometry/setXBoxPos       0.0 cm
+/gate/PETscanner/geometry/setYBoxPos       0.0 cm
+/gate/PETscanner/geometry/setZBoxPos       0.0 cm
+/gate/PETscanner/setMaterial             Air
+/gate/PETscanner/vis/setColor            red
+/gate/PETscanner/vis/forceWireframe
+/gate/PETscanner/vis/setVisible          false
+
+# detector head, 2 module side by side
+/gate/PETscanner/daughters/name          head
+/gate/PETscanner/daughters/insert        box
+/gate/head/placement/setTranslation      0. 20. 0. cm
+/gate/head/geometry/setXLength           60.0 cm
+/gate/head/geometry/setYLength            2.0 cm
+/gate/head/geometry/setZLength           80.0 cm
+/gate/head/setMaterial                   Water
+/gate/head/vis/setColor                  magenta
+/gate/head/vis/forceWireframe
+/gate/head/vis/setVisible                true
+
+/gate/head/daughters/name                module
+/gate/head/daughters/insert              box
+/gate/module/geometry/setXLength         0.39 cm
+/gate/module/geometry/setYLength          2.0 cm
+/gate/module/geometry/setZLength         80.0 cm
+/gate/module/setMaterial                 Water
+/gate/module/vis/setColor                green
+/gate/module/vis/forceWireframe
+/gate/module/vis/setVisible              false
+
+# crystal
+/gate/module/daughters/name              crystal
+/gate/module/daughters/insert            box
+/gate/crystal/geometry/setXLength        0.39 cm
+/gate/crystal/geometry/setYLength         2.0 cm
+/gate/crystal/geometry/setZLength        0.39 cm
+/gate/crystal/setMaterial                LSO
+/gate/crystal/vis/setColor               yellow
+/gate/crystal/vis/forceWireframe
+/gate/crystal/vis/setVisible             false
+
+# repeat crystal to fill the module
+/gate/crystal/repeaters/insert            cubicArray
+/gate/crystal/cubicArray/setRepeatNumberX 1
+/gate/crystal/cubicArray/setRepeatNumberY 1
+/gate/crystal/cubicArray/setRepeatNumberZ 200
+/gate/crystal/cubicArray/setRepeatVector  0.0 0.0 0.4 cm
+
+# repeat module to fill the head
+/gate/module/repeaters/insert            cubicArray
+/gate/module/cubicArray/setRepeatNumberX 150
+/gate/module/cubicArray/setRepeatNumberY 1
+/gate/module/cubicArray/setRepeatNumberZ 1
+/gate/module/cubicArray/setRepeatVector  0.4 0.0 0.0 cm
+
+# repeat head
+/gate/head/repeaters/insert              ring
+/gate/head/ring/setRepeatNumber          2
+
+# attach system
+/gate/systems/PETscanner/level1/attach head
+/gate/systems/PETscanner/level2/attach module
+/gate/systems/PETscanner/level3/attach crystal
+
+# attach sensitive detector
+/gate/crystal/attachCrystalSD
+
+# describe system
+/gate/systems/PETscanner/describe

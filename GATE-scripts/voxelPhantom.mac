@@ -1,0 +1,13 @@
+/gate/world/daughters/name                                     attenuator
+/gate/world/daughters/insert                                   compressedMatrix
+/gate/attenuator/geometry/insertReader                         interfile
+/gate/attenuator/interfileReader/insertTranslator              tabulated
+#/gate/attenuator/interfileReader/tabulatedTranslator/readTable att-vis.tab
+/gate/attenuator/interfileReader/tabulatedTranslator/readTable att.tab
+/gate/attenuator/interfileReader/tabulatedTranslator/describe  1
+/gate/attenuator/interfileReader/readFile                      att_lesion_map.h33
+/gate/attenuator/placement/setTranslation                      0.0 0.0 30.0 cm
+#/gate/attenuator/placement/setTranslation                      0 0 0 cm
+/gate/attenuator/placement/setRotationAxis                     0 0 1
+/gate/attenuator/placement/setRotationAngle                    0 deg
+/gate/attenuator/attachVoxelPhantomSD

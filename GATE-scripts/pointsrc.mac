@@ -1,0 +1,17 @@
+# S O U R C E S
+/gate/source/addSource twogamma
+/gate/source/twogamma/setActivity 10000. becquerel
+/gate/source/twogamma/setType backtoback
+/gate/source/twogamma/setAccolinearityFlag 0
+/gate/source/twogamma/setAccoValue  0.0 deg
+/gate/source/twogamma/gps/particle gamma
+/gate/source/twogamma/gps/energytype Mono
+/gate/source/twogamma/gps/monoenergy 0.511 MeV
+
+# shape: point souce
+/gate/source/twogamma/gps/type Point
+/gate/source/twogamma/gps/angtype iso
+/gate/source/twogamma/gps/centre 0 0 0 mm
+/gate/source/twogamma/visualize 2000 red 2
+
+/gate/source/list

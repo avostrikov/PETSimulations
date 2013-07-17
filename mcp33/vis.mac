@@ -1,0 +1,67 @@
+/run/verbose 1
+/control/verbose 1
+
+# histogram title
+/histo/file vis
+
+# flag for optical process
+/physics/optical true
+
+# detector dimension
+#/detector/hall_x 100.0 mm
+#/detector/hall_y 100.0 mm
+#/detector/hall_z 100.0 mm
+#/detector/guide_z 5 mm
+
+#/detector/slab_x 0.5 mm
+#/detector/slab_y 0.5 mm
+#/detector/slab_z 5.0 mm
+
+#/detector/sipm_z 2.0 mm
+#/detector/sipm_r 5.0 mm
+
+#/detector/update
+
+
+# visualization
+/vis/open  OGLSX
+#/vis/open  VRML2FILE
+#/vis/open DAWNFILE
+#/vis/open HepRepFile
+#/vis/viewer/set/style wireframe
+#/vis/viewer/set/viewpointVector 1 1.5 1.1
+
+/vis/viewer/set/viewpointThetaPhi  90 0 deg
+/vis/viewer/zoom 1.
+
+/vis/drawVolume
+
+/tracking/storeTrajectory 1
+
+/vis/scene/add/trajectories
+#/vis/scene/endOfEventAction accumulate
+
+
+# radiation source
+
+/gps/ene/type      Mono
+/gps/ene/mono      511 keV
+
+/gps/position    2.125       2.125      0. mm
+/gps/direction   0.      0.      1.
+
+
+#/gps/pos/type      Volume
+#/gps/pos/shape     Cylinder
+#/gps/pos/centre    0. 0. 0. mm
+#/gps/pos/radius    0.1 mm
+#/gps/pos/halfz     0.1 mm
+
+#/gps/ang/type         iso
+#/gps/ang/mintheta       0. deg
+#/gps/ang/maxtheta      40. deg
+#/gps/ang/minphi         0. deg
+#/gps/ang/maxphi       360. deg
+
+
+/run/beamOn 2

@@ -1,0 +1,35 @@
+# Declare a voxellized source
+/gate/source/addSource WB_FDG voxel
+
+# Enter the voxellized source using Interfile data
+/gate/source/WB_FDG/reader/insert interfile
+/gate/source/WB_FDG/interfileReader/translator/insert range
+/gate/source/WB_FDG/interfileReader/rangeTranslator/readTable act-lesion-range.txt
+/gate/source/WB_FDG/interfileReader/rangeTranslator/describe 1
+/gate/source/WB_FDG/interfileReader/readFile act_lesion_map.h33
+/gate/source/WB_FDG/interfileReader/verbose 1
+
+# characterize the source 
+/gate/source/WB_FDG/setType backtoback
+/gate/source/WB_FDG/gps/particle gamma
+/gate/source/WB_FDG/gps/energytype Mono
+/gate/source/WB_FDG/gps/monoenergy 0.511 MeV
+/gate/source/WB_FDG/setForcedUnstableFlag true
+/gate/source/WB_FDG/setForcedHalfLife 6586.2 s
+/gate/source/WB_FDG/gps/angtype iso
+/gate/source/WB_FDG/gps/mintheta  0. deg
+/gate/source/WB_FDG/gps/maxtheta 90. deg
+/gate/source/WB_FDG/gps/minphi    0. deg
+/gate/source/WB_FDG/gps/maxphi  180. deg
+/gate/source/WB_FDG/gps/confine NULL
+
+# The default position of the voxellized source is in the first quarter.
+# To aligh, shift over half its dimension in the nagative direction on each axis
+#/gate/source/voxel_WB/setPosition  -31.2 -16.4 -67.4 cm
+#/gate/source/WB_FDG/setPosition  -31.2 -18.4 -97.4 cm
+# the phantom is axially translate by 30 cm
+/gate/source/WB_FDG/setPosition  -31.2 -18.4 -67.4 cm
+/gate/source/WB_FDG/dump 1
+
+# visualize the source
+/gate/source/WB_FDG/visualize 10000 magenta 1

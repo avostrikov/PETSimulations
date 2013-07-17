@@ -1,0 +1,27 @@
+
+/run/verbose 1
+/control/verbose 1
+
+# histogram title
+/histo/file center_39
+
+# flag for optical process
+/physics/optical true
+
+# detector dimension
+#/detector/hall_x 100.0 mm
+#/detector/update
+
+# radiation source
+/gps/ene/type      Mono
+/gps/ene/mono      511 keV
+
+/gps/position    2.125     2.125      0. mm
+/gps/direction   0.      0.      1.
+
+
+
+/tracking/storeTrajectory 1
+
+/run/beamOn 1000
+
